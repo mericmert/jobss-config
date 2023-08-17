@@ -1,0 +1,3 @@
+jwt:
+  security:
+    secret-key: secret
