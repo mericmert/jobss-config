@@ -1,6 +1,6 @@
-
-
 spring:
+  application:
+    name: application-service
   datasource:
     username: postgres
     password: 123
@@ -16,8 +16,6 @@ spring:
         show_sql: true
   main:
     banner-mode: off
-  application:
-    name: application-service
   kafka:
     consumer:
       bootstrap-servers: broker:9092
