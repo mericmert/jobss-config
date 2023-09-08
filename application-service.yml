@@ -1,0 +1,27 @@
+
+
+spring:
+  datasource:
+    username: postgres
+    password: 123
+    url: jdbc:postgresql://postgres:5432/applications_db
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  main:
+    banner-mode: off
+  application:
+    name: application-service
+  kafka:
+    consumer:
+      bootstrap-servers: broker:9092
+
+server:
+  port: 8081
+
