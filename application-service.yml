@@ -2,7 +2,7 @@ spring:
   datasource:
     username: postgres
     password: 123
-    url: jdbc:postgresql://localhost:5432/applications_db
+    url: jdbc:postgresql://postgres:5432/applications_db
 
   jpa:
     show-sql: true
@@ -16,7 +16,7 @@ spring:
     banner-mode: off
   kafka:
     consumer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: broker:9092
 
 server:
   port: 8081
