@@ -2,4 +2,11 @@ jwt:
   security:
     secret-key: ntffxJ2RRrRfBA/1fdO0/GKpTNl0byq8lKOLdNKBojI=
     expiration: 86400000
-    refresh-expiration: 604800000 
+    refresh-expiration: 604800000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://registry:8761/eureka/
